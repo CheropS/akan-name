@@ -31,9 +31,7 @@ function getGender() {
     var gender=document.getElementsByName("dropdown");
     if(gender[0].onselect==true){
         var gender="male";
-    } else if (gender[1].onselect==true) {
+    } else (gender[1].onselect==true) {
         var gender="female";
-    } else {
-        return true;
     }
 }
