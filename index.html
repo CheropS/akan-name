@@ -41,19 +41,15 @@
             <div class="card-group">    
                     <div class="card">
                             <img src="img/boy and girl.jpg" alt="boy chatting girl" height="400px">
-                        <form>
+                        <form name="myform" method="POST" onsubmit="return validateform()">
                             <div class="card-body">
                                 <div class="row">
-                                    <label for="fname">First Name or Nickname</label><br>
-                                    <input type="text"><br>
-                                    <label>Date</label><br>
-                                    <input type="number"><br>
-                                    <label for="month">Month</label><br>
-                                    <input type="month"><br>
-                                    <label for="year">Year</label><br>
-                                    <input type="number"><br>
+                                    First Name or Nickname<input type="text" name="firstName"required>
+                                    Date <input type="number" name="date" required>
+                                    Month: <input type="number" name="month" required>
+                                    Year: <input type="number" name="year" required><br>
 
-                                    <button type="button" class="btn btn-success">submit</button>
+                                    <input type="submit" class="btn btn-success" value="submit"></button>
                                 </div>
                             </div>
                         </form>
