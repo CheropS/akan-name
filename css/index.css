@@ -1,7 +1,15 @@
-h1 {
+h1, h2 {
     color:gold;
 }
 .card {
     display: flex;
     flex-direction: row;
+}
+.row {
+    width: 70%;
+    margin-left: 10%;
+    padding: 20px;
+}
+btn {
+    padding-top: 30px;
 }
