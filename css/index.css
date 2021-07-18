@@ -1,5 +1,5 @@
 .navbar {
-    background-color: green;
+    background-color:#006b3f;
     flex-direction: column;
     justify-content: space-between;
     padding:20px;
@@ -16,8 +16,8 @@ li {
 li a {
     padding:10px 180px;
 }
-h1, h2 {
-    color:gold;
+h1 {
+    color:#fcd116;
 }
 .card {
     display: flex;
@@ -30,4 +30,10 @@ h1, h2 {
 }
 btn {
     padding-top: 30px;
+}
+footer {
+    text-align: center;
+    background-color:#006b3f;
+    color: white;
+    padding: 20px;
 }
