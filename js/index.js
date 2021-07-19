@@ -10,6 +10,7 @@ function validateform() {
     var yy=document.getElementsByName("year").value;
 
     var newDate=parseInt(dd);
+    var newCentuary=parseInt(cc);
     var newYear=parseInt(yy);
 
     if(gender=="") {
@@ -26,13 +27,48 @@ function validateform() {
         alert("Year is invalid");
     }
     alert(newYear)
+    
+};
+
+function findName () {
+    const days=["Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday"];
+    var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+    var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    var dCalc=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
 }
+    if (gender == "male" ){
+        if (day == "Sunday") {
+            akanName = "Kwasi";
+        }else if (day == "Monday") {
+            akanName = "Kwadwo";
+        }else if (day == "Tuesday") {
+            akanName = "Kwabena";
+        }else if (day == "Wednesday") {
+            akanName = "Kwaku"
+        }else if (day == "Thursday") {
+            akanName = "Yaw"
+        }else if (day == "Friday") {
+            akanName = "Kofi"
+        }else if (day == "Saturday"){
+            akanName = "Kwame"
+        }
 
+    }else if (gender == "female") {
+        if (day == "Sunday") {
+            akanName = "Akosua";
+        }else if (day == "Monday") {
+            akanName = "Adwoa";
+        } else if (day == "Tuesday") {
+            akanName = "Abenaa";
+        } else if (day == "Wednesday") {
+            akanName = "Akua";
+        } else if (day == "Thursday") {
+            akanName = "Yaa";
+        } else if (day == "Friday") {
+            akanName = "Afua";
+        } else if (day == "Saturday") {
+            akanName = "Ama";
+        }
+        console.log(dCalc);
+    }
 
-// function getGender() {
-//     var gender=document.getElementsByName("dropdown");
-//     if(gender[0].onselect==true){
-//         var gender="male";
-//     } else (gender[1].onselect==true) {
-//         var gender="female"; }
-        
