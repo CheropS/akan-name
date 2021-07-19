@@ -31,29 +31,34 @@ function validateform() {
     var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     var d=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
 
-    if(d==0&&gender=='male'){
+    if(d==0 && gender=='male'){
         alert('Your Akan name is: ' + maleNames[0] +'You were born on '+ days[0])
         return false;
     }
-    if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0] + 'You were born on '+ days[0])
+    if (d==1 && gender=='male'){
+        alert('Your Akan name is: '+ maleNames[1] + 'You were born on '+ days[1])
         return false; 
     }
-    if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0]+'You were born in '+ days[0])
+    if (d==2 && gender=='male'){
+        alert('Your Akan name is: '+ maleNames[2]+'You were born on '+ days[2])
         return false; 
     }
-    if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0]+ 'You were born in '+ days[0])
+    if (d==3 && gender=='male'){
+        alert('Your Akan name is: '+ maleNames[3]+ 'You were born on '+ days[3])
         return false; 
     }
-    if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0]+ 'You were born in '+ days[0])
+    if (d==4 && gender=='male'){
+        alert('Your Akan name is: '+ maleNames[4]+ 'You were born on '+ days[4])
         return false; 
     }
-    if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0] + 'You were born in ' + days[0])
-        return false; 
+    
+    if (d==5 && gender=='male'){
+        alert('Your Akan name is: '+ maleNames[5] + 'You were born on ' + days[5])
+        return false; }
+    if (d==6 && gender=='male'){
+            alert('Your Akan name is: '+ maleNames[6] + 'You were born on ' + days[6])
+            return false; 
+    
     } else if (d==0&&gender=='female'){
         alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
         return false; }
