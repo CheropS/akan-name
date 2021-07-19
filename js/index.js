@@ -3,7 +3,7 @@
 // var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
 
 function validateform() {
-    var gender=document.getElementsByName("dropdown").value;
+    var gender=document.getElementById("gender").value;
     var dd=document.getElementsByName("date").value;
     var mm=document.getElementsByName("month").value;
     var cc=document.getElementsByName("centuary").value;
@@ -12,8 +12,9 @@ function validateform() {
     var newDate=parseInt(dd);
     var newCentuary=parseInt(cc);
     var newYear=parseInt(yy);
+    alert (dd)
 
-    if(gender=="") {
+    if(gender.value=="") {
         alert("Gender can't be blank");
         return false;
     } else if (dd>31) {
