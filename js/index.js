@@ -32,24 +32,46 @@ function validateform() {
     var d=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
 
     if(d==0&&gender=='male'){
-        alert('Your Akan name is: '+maleNames[0]+'You were born on '+days[0])
+        alert('Your Akan name is: ' + maleNames[0] +'You were born on '+ days[0])
         return false;
     }
     if (d==0&&gender=='male'){
-        alert('Your Akan name is: '+maleNames[0]+'You were born in '+days[0])
-        return false; }
+        alert('Your Akan name is: '+ maleNames[0] + 'You were born on '+ days[0])
+        return false; 
+    }
     if (d==0&&gender=='male'){
-            alert('Your Akan name is: '+maleNames[0]+'You were born in '+days[0])
+        alert('Your Akan name is: '+ maleNames[0]+'You were born in '+ days[0])
+        return false; 
+    }
+    if (d==0&&gender=='male'){
+        alert('Your Akan name is: '+ maleNames[0]+ 'You were born in '+ days[0])
+        return false; 
+    }
+    if (d==0&&gender=='male'){
+        alert('Your Akan name is: '+ maleNames[0]+ 'You were born in '+ days[0])
+        return false; 
+    }
+    if (d==0&&gender=='male'){
+        alert('Your Akan name is: '+ maleNames[0] + 'You were born in ' + days[0])
+        return false; 
+    } else if (d==0&&gender=='female'){
+        alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
+        return false; }
+        if (d==0&&gender=='female'){
+            alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
             return false; }
-            if (d==0&&gender=='male'){
-                alert('Your Akan name is: '+maleNames[0]+'You were born in '+days[0])
+        if (d==0&&gender=='female'){
+            alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
+            return false; }
+        if (d==0&&gender=='female'){
+            alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
+            return false; }
+        if (d==0&&gender=='female'){
+            alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
+            return false; }
+        if (d==0&&gender=='female'){
+                alert('Your Akan name is: '+ femaleNames[0]+ 'You were born in '+ days[0])
                 return false; }
-                if (d==0&&gender=='male'){
-                    alert('Your Akan name is: '+maleNames[0]+'You were born in '+days[0])
-                    return false; }
-                    if (d==0&&gender=='male'){
-                        alert('Your Akan name is: '+maleNames[0]+'You were born in '+days[0])
-                        return false; }
 };
 
 
