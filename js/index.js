@@ -29,55 +29,56 @@ function validateform() {
     const days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     var maleNames=["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
     var femaleNames=["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    var d=parseInt((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7);
+    var d=parseInt(((((cc/4) -2*cc-1) + ((5*yy/4)) + ((26*(mm+1)/10)) + dd )%7)+1);
 
     if(d==0 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[0] +'You were born on '+ days[0])
+        alert('Your Akan name is: '+ maleNames[0] +'\n You were born on '+ days[0])
         return false;
     }
     if (d==1 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[1] + 'You were born on '+ days[1])
+        alert('Your Akan name is: '+ maleNames[1] + '\n You were born on '+ days[1])
         return false; 
     }
     if (d==2 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[2]+'You were born on '+ days[2])
+        alert('Your Akan name is: '+ maleNames[2]+'\n You were born on '+ days[2])
         return false; 
     }
     if (d==3 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[3]+ 'You were born on '+ days[3])
+        alert('Your Akan name is: '+ maleNames[3]+ '\n You were born on '+ days[3])
         return false; 
     }
     if (d==4 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[4]+ 'You were born on '+ days[4])
+        alert('Your Akan name is: '+ maleNames[4]+ '\n You were born on '+ days[4])
         return false; 
     }
     
     if (d==5 && gender=='male'){
-        alert('Your Akan name is: '+ maleNames[5] + 'You were born on ' + days[5])
+        alert('Your Akan name is: '+ maleNames[5] + '\n You were born on ' + days[5])
         return false; }
     if (d==6 && gender=='male'){
-            alert('Your Akan name is: '+ maleNames[6] + 'You were born on ' + days[6])
+            alert('Your Akan name is: '+ maleNames[6] + '\n You were born on ' + days[6])
             return false; }
+            
      if (d==0&&gender=='female'){
-       alert('Your Akan name is: '+ femaleNames[0]+ ' You were born on '+ days[0])
+       alert('Your Akan name is: '+ femaleNames[0]+ ' \n You were born on '+ days[0])
        return false; }
      if (d==1&&gender=='female'){
-           alert('Your Akan name is: '+ femaleNames[1]+ ' You were born on '+ days[1])
+           alert('Your Akan name is: '+ femaleNames[1]+ '\n You were born on '+ days[1])
            return false; }
      if (d==2&&gender=='female'){
-            alert('Your Akan name is: '+ femaleNames[2]+ 'You were born on '+ days[2])
+            alert('Your Akan name is: '+ femaleNames[2]+ '\n You were born on '+ days[2])
            return false; }
     if (d==3 && gender=='female'){
-            alert('Your Akan name is: '+ femaleNames[3]+ 'You were born on '+ days[3])
+            alert('Your Akan name is: '+ femaleNames[3]+ '\n You were born on '+ days[3])
             return false; }
      if (d==4&&gender=='female'){
-            alert('Your Akan name is: '+ femaleNames[4]+ 'You were born on '+ days[4])
+            alert('Your Akan name is: '+ femaleNames[4]+ '\n You were born on '+ days[4])
             return false; }
     if (d==5 &&gender=='female'){
-              alert('Your Akan name is: '+ femaleNames[5]+ 'You were born on '+ days[5])
+              alert('Your Akan name is: '+ femaleNames[5]+ '\n You were born on '+ days[5])
                return false; }
     if (d==6&&gender=='female'){
-                   alert('Your Akan name is: '+ femaleNames[6] + 'You were born on ' + days[6])
+                   alert('Your Akan name is: '+ femaleNames[6] + '\n You were born on ' + days[6])
                    return false; 
                 }
             }
