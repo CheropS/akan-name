@@ -4,30 +4,28 @@
 
 function validateform() {
     var gender=document.getElementById("gender").value;
-    var dd=document.getElementsByName("date").value;
-    var mm=document.getElementsByName("month").value;
-    var cc=document.getElementsByName("centuary").value;
-    var yy=document.getElementsByName("year").value;
+    var dd=document.getElementById("date").value;
+    var mm=document.getElementById("month").value;
+    var cc=document.getElementById("centuary").value;
+    var yy=document.getElementById("year").value;
 
     var newDate=parseInt(dd);
     var newCentuary=parseInt(cc);
     var newYear=parseInt(yy);
-    alert (dd)
 
-    if(gender.value=="") {
+    if(gender=="") {
         alert("Gender can't be blank");
         return false;
-    } else if (dd>31) {
+    } else if (dd=="" || dd>31) {
         alert("date is invalid");
         return false;
-    } else if (mm>12) {
+    } else if (mm=="" || mm>12) {
         alert("month is invalid");
-    } else if (cc>21) {
+    } else if (cc=="" ||cc>21) {
         alert("centuary is invalid");
-    } else if (yy>21) {
+    } else if (yy=="") {
         alert("Year is invalid");
     }
-    alert(newYear)
     
 };
 
