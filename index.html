@@ -2,69 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Akan Name</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/bootstrap.bundle.js"></script>
+    <title>Akan Name Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css"> <!-- External CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li style="float:right"><a>Your Akan Name</a></li>
-                <li style="float:right"><a>Take the Test</a></li>
-            </ul>
-        </nav>
-    </div>
-    <section>
-        <div class="card">
-            <div class="card-body">
-                <h1 class="card-title">What's your Akan Name?</h1>
-                    <div class="card-text">
-                        <p>Your name has a meaning.</p>
-                        <p>In African culture, names have meaning depending on when you were born in terms of time, date, and month.</p>
-                        <p>In Ghana, the day of the week that you were born has its unique name.</p>
-                        <p>Females and males have their own unique names set out according to the culture.</p>
-                        <p>would you like to know your name?</p>
-                    </div>
-            </div>
-                <div class="card-body">
-                    <img src="img/flag with kids.webp" alt="kids holding Ghanian Flag" width="500px">
-                </div>
-        </div>
-    </section>
-    <section>
-        <div>
-            <h1>What does your name say about you?</h1>
-            <div class="card-group">    
-                    <div class="card">
-                            <img src="img/boy and girl.jpg" alt="boy chatting girl" height="400px">
-                        <form name="myform" onsubmit="return false">
-                            <div class="card-body">
-                                <div class="row">
-                                    <label>Gender</label>
-                                    <select name="dropdown" id="gender">
-                                        <option value=""></option>
-                                        <option value="male" onclick="findName">Male</option>
-                                        <option value="female">Female</option>
-                                    </select>
-                                    DD <input type="number" name="date" id="date">
-                                    MM: <input type="number" name="month" id="month">
-                                    CC: <input type="number" name="centuary" id="centuary"><br>
-                                    YY: <input type="number" name="year" id="year"><br>
 
-                                    <input type="submit" onclick="validateform()" class="btn btn-success" value="submit">                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Akan Name Finder</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Akan Names</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section text-center text-white">
+        <div class="container">
+            <h1 class="fw-bold">Discover Your Akan Name</h1>
+            <p class="lead">Akan names are given based on the day of birth. Find out yours now!</p>
+        </div>
+    </header>
+
+    <!-- Form Section -->
+    <section class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container p-4 shadow">
+                    <h3 class="text-center mb-4">Enter Your Birth Details</h3>
+                    <form id="akanForm" onsubmit="return validateForm()">
+                        <div class="mb-3">
+                            <label for="gender" class="form-label">Gender</label>
+                            <select id="gender" class="form-select" required>
+                                <option value="">Select Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Day</label>
+                            <input type="number" id="date" class="form-control" min="1" max="31" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="month" class="form-label">Month</label>
+                            <input type="number" id="month" class="form-control" min="1" max="12" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="centuary" class="form-label">Century</label>
+                            <input type="number" id="centuary" class="form-control" min="19" max="21" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="year" class="form-label">Year</label>
+                            <input type="number" id="year" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success w-100">Find My Name</button>
+                    </form>
+                    <div id="result" class="mt-4 text-center fw-bold"></div>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <p>Copyright 2021</p>
-        <P>Developed for Moringa School</P>
-    </footer>
-    <script src="js/index.js"></script>
+<!-- Footer -->
+<footer class="bg-success text-white py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Author Section -->
+            <div class="col-md-6">
+                <p>&copy; <span id="2021"></span> Akan Name Finder | Created by <a class="text-white">Sharon Cherop</a></p>
+            </div>
+            <!-- Social Media Section -->
+            <div class="col-md-6 text-md-end">
+                <a href="https://x.com/LearnWithSharry" class="text-white mx-2" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" class="text-white mx-2" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script> <!-- External JavaScript -->
 </body>
 </html>
