@@ -12,7 +12,7 @@ The website is an application of a Ghanian name generator based on gender and bi
 ## Technologies Used
 The project has used HTML to have the basic structure of the page, CSS for styling, bootstrap and also Javascript for validating the form and calcuating the output. 
 ## Support and contact details
-In case of any issues, kindly contact me via twitter, my handle is @LearnwithSharry. 
+In case of any issues, kindly contact me via X, my handle is [LearnwithSharry](https://x.com/LearnWithSharry) 
 ### License
 *MIT*
 Copyright (c) {2021} **with the help and resources from Moringa School, Nairobi**
