@@ -1,43 +1,23 @@
+/* Ghanaian-themed Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #006b3f, #fcd116, #ce1126); /* Ghana flag colors */
+    padding: 60px 0;
+}
 
-.navbar {
-    background-color:#006b3f;
-    flex-direction: column;
-    justify-content: space-between;
-    padding:20px;
-    justify-content: left;
-}
-ul {
-    list-style-type: none;
-    text-align: left;
-    justify-content: space-between;
-}
-li {
-    display: inline;
-}
-li a {
-    padding:10px 180px;
-}
-h1 {
-    color:#fcd116;
-}
-.card {
-    display: flex;
-    flex-direction: row;
-}
-.row {
-    width: 50%;
-    margin-left: 10%;
+/* Form Container */
+.form-container {
+    background: white;
+    border-radius: 8px;
     padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-.btn {
-    padding-top: 30px;
+
+/* Button Styling */
+.btn-success {
+    background-color: #006b3f;
+    border: none;
+    transition: 0.3s;
 }
-.card-group {
-    padding: 20px;
-}
-footer {
-    text-align: center;
-    background-color:#006b3f;
-    color: white;
-    padding: 20px;
+.btn-success:hover {
+    background-color: #004d2b;
 }
